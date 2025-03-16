@@ -12,7 +12,7 @@ import {
 	SidebarHeader,
 	SidebarRail,
 } from "@/components/ui/sidebar";
-import { data } from "@/constants/navigation";
+import { NAVIGATION_ITEMS } from "@/constants/navigation";
 import type { Session } from "next-auth";
 
 export function AppSidebar({
@@ -25,7 +25,7 @@ export function AppSidebar({
 				<OrgButton />
 			</SidebarHeader>
 			<SidebarContent>
-				<NavSocials items={data.socialMedia} />
+				<NavSocials items={NAVIGATION_ITEMS.socialMedia} />
 			</SidebarContent>
 			<SidebarFooter>
 				<NavUser session={session} />
