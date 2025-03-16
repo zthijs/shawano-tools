@@ -1,0 +1,80 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.preferences.autoImportFileExcludePatterns": [
+        "next/router.d.ts",
+        "next/dist/client/router.d.ts"
+    ],
+    "workbench.editor.customLabels.patterns": {
+        "**/app/**/layout.tsx": "${dirname} - ${filename}.${extname}",
+        "**/app/**/page.tsx": "${dirname} - ${filename}.${extname}",
+        "**/app/**/loading.tsx": "${dirname} - ${filename}.${extname}",
+        "**/app/**/not-found.tsx": "${dirname} - ${filename}.${extname}",
+        "**/app/**/error.tsx": "${dirname} - ${filename}.${extname}",
+        "**/app/**/route.ts": "${dirname} - ${filename}.${extname}",
+        "**/app/**/template.tsx": "${dirname} - ${filename}.${extname}"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        ".turbo/cache": true,
+        ".turbo/cookies": true,
+        ".turbo/daemon": true,
+        "**/*/.turbo": true,
+        "**/CVS": true,
+        "**/.npm": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/coverage": true,
+        "**/.swc": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/.next": true
+    },
+    "editor.formatOnSave": true,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.js": "${capture}.test.js, ${capture}.spec.js",
+        "*.ts": "${capture}.test.ts, ${capture}.test.tsx, ${capture}.spec.ts, ${capture}.spec.tsx",
+        "*.tsx": "${capture}.test.ts, ${capture}.test.tsx, ${capture}.spec.ts, ${capture}.spec.tsx",
+        "changelog.md": "changelog.json"
+    },
+    "cSpell.language": "en-US",
+    "markdownlint.config": {
+        "MD024": {
+            "siblings_only": true
+        }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[graphql]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    },
+
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    }
+}
