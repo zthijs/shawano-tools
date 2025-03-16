@@ -5,9 +5,8 @@ import "react-image-crop/dist/ReactCrop.css";
 import "react-photo-view/dist/react-photo-view.css";
 
 export const metadata: Metadata = {
-	title: "Shawano&apos;s PR Tools",
-	description:
-		"PR Tools voor de vrijwilligers van scouting groep Shawano&apos;s",
+	title: "Shawano's PR Tools",
+	description: "PR Tools voor de vrijwilligers van scouting groep Shawano's",
 };
 
 export default function RootLayout({
