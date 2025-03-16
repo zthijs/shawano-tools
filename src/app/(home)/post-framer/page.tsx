@@ -92,7 +92,12 @@ export default function PostFramer() {
 			<p className="pb-1 text-sm text-muted-foreground">
 				Genereer de afbeeldingen
 			</p>
-			<Button onClick={handleExport}>Genereer</Button>
+			<Button
+				disabled={dropzone.fileStatuses.length < 1}
+				onClick={handleExport}
+			>
+				Genereer
+			</Button>
 			{downloadUrls.length > 0 && (
 				<div className="grid grid-cols-3 gap-4 md:grid-cols-5 lg:grid-cols-7">
 					<PhotoProvider>
@@ -115,6 +120,7 @@ export default function PostFramer() {
 				Download de afbeeldingen
 			</p>
 			<Button
+				disabled={downloadUrls.length < 1}
 				onClick={() => {
 					downloadUrls.forEach((url, index) => {
 						saveAs(url, `generated-${index + 1}.png`);
