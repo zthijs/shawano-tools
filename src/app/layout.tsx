@@ -6,7 +6,7 @@ import "react-photo-view/dist/react-photo-view.css";
 
 export const metadata: Metadata = {
 	title: "Shawano's PR Tools",
-	description: "PR Tools voor de vrijwilligers van scouting groep Shawano's",
+	description: "PR Tools voor de vrijwilligers van scoutinggroep Shawano's",
 };
 
 export default function RootLayout({
