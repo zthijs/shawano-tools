@@ -44,12 +44,14 @@ export default function AICaption() {
 			</Card>
 			<p className="pb-1 text-sm text-muted-foreground">
 				Omschrijf wat voor post je gaat plaatsen en genereer een bijschrift.
+				(Max 200 karakters)
 			</p>
 			<form onSubmit={handleSubmit} className="flex flex-col gap-4">
 				<Textarea
 					name="postDescription"
 					placeholder="Voer een bericht omschrijving in."
 					required
+					maxLength={250}
 				/>
 				<Button disabled={isPending} className="w-full" type="submit">
 					Genereer caption
